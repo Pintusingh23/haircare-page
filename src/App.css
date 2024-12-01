@@ -1,0 +1,59 @@
+/* Reset general styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Navigation Bar */
+.nav-bar {
+  position: sticky; /* Navbar will stay at the top when scrolling */
+  top: 0;
+  z-index: 1000;
+  background-color: #123e2a;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+/* Logo Style */
+.nav-bar .logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+}
+
+/* Navigation Links */
+.nav-bar ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-bar ul li {
+  margin: 0 10px;
+}
+
+.nav-bar ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+}
+
+.nav-bar ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .nav-bar ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-bar ul li {
+    margin: 10px 0;
+  }
+}
+
